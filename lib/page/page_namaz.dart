@@ -5,6 +5,7 @@ import 'package:flutter_application_1/page/besh_ubak.dart';
 import 'package:flutter_application_1/page/home_page.dart';
 import 'package:flutter_application_1/page/nafil_namaz.dart';
 
+import '../constants/card.dart';
 import '../constants/colors.dart';
 
 class PageNamaz extends StatefulWidget {
@@ -81,25 +82,6 @@ class _PageNamazState extends State<PageNamaz> {
           ),
         ],
       ),
-    );
-  }
-}
-
-class CardNamaz extends StatelessWidget {
-  const CardNamaz({
-    super.key,
-    required this.fonCard,
-  });
-  final Image fonCard;
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: fonCard,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0),
-      ),
-      elevation: 5,
-      margin: EdgeInsets.all(10),
     );
   }
 }
